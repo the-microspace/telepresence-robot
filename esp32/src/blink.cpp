@@ -1,14 +1,14 @@
 #include "blink.hpp"
 
-void blinkLED()
+void blinkLED(int pin)
 {
-  blinkLED(500);
+  blinkLED(pin, 500);
 }
 
-void blinkLED(int delay_length)
+void blinkLED(int pin, int delay_length)
 {
-  digitalWrite(LED, HIGH); // turn LED ON
+  digitalWrite(pin, HIGH); // turn LED ON
   delay(delay_length);     // wait for delay_length milliseconds
-  digitalWrite(LED, LOW);  // turn OFF the LED
+  digitalWrite(pin, LOW);  // turn OFF the LED
   delay(delay_length);     // wait for delay_length milliseconds
 }

@@ -3,9 +3,7 @@
 #ifndef BLINK_HPP
 #define BLINK_HPP
 
-#define LED 23
-
-void blinkLED();
-void blinkLED(int delay_length);
+void blinkLED(int pin);
+void blinkLED(int pin, int delay_length);
 
 #endif
